@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hj.mapper.UserMapper">
+	<resultMap type="User" id="rm">
+		<id column="userId" property="userId"/>
+		<result column="userName" property="userName" />
+		<result column="userPwd" property="userPwd" />
+		<result column="flag" property="flag" />
+	</resultMap>
+	<select id="login" parameterType="User" resultType="User">
+		select * from user_info where userName=#{userName} and userPwd=#{userPwd}
+	</select>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases> 
+        <typeAlias alias="Food" type="com.hj.entity.Food"/>
+        <typeAlias alias="FoodType" type="com.hj.entity.FoodType"/>
+        <typeAlias alias="User" type="com.hj.entity.UserInfo"/> 
+    </typeAliases> 
+    <mappers>
+        <mapper resource="com/hj/mapper/FoodMapper.xml"/>
+        <mapper resource="com/hj/mapper/FoodTypeMapper.xml"/>
+        <mapper resource="com/hj/mapper/UserMapper.xml"/>
+    </mappers>
+</configuration>
